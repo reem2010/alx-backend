@@ -18,7 +18,7 @@ except AssertionError:
     print("AssertionError raised with 0")
 
 try:
-    should_err = server.get_page(2, 'Bob')
+    should_err = server.get_page('Bob', 2)
 except AssertionError:
     print("AssertionError raised when page and/or page_size are not ints")
 
