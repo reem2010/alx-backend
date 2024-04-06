@@ -8,6 +8,7 @@ import math
 from typing import List
 from typing import Dict
 
+
 class Server:
     """Server class to paginate a database of popular baby names.
     """
@@ -40,4 +41,5 @@ class Server:
         return self.__indexed_dataset
 
     def get_hyper_index(self, index: int = None, page_size: int = 10) -> Dict:
-            pass
+        """Deletion-resilient hypermedia pagination"""
+        pass
