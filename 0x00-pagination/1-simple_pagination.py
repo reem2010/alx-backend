@@ -47,8 +47,8 @@ class Server:
             Returns:
                 the page
             """
-        assert type(page_size) == int and page_size > 0
-        assert type(page) == int and page > 0
+        assert type(page_size) is int and page_size > 0
+        assert type(page) is int and page > 0
         index = index_range(page, page_size)
         res = self.dataset()[index[0]: index[1]]
         return res
