@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
+"""Hypermedia pagination module"""
 import csv
 import math
 from typing import List
 from typing import Dict
-"""helper module"""
 
 
 def index_range(page: int, page_size: int) -> tuple:
