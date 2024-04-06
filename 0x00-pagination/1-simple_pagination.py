@@ -46,7 +46,7 @@ class Server:
                 page_size: size of the page
             Returns:
                 the page
-            """
+        """
         assert type(page_size) is int and page_size > 0
         assert type(page) is int and page > 0
         index = index_range(page, page_size)
