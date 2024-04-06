@@ -2,7 +2,7 @@
 import csv
 import math
 from typing import List
-
+from typing import Dict
 """helper module"""
 
 
@@ -53,7 +53,7 @@ class Server:
         res = self.dataset()[index[0]: index[1]]
         return res
 
-    def get_hyper(self, page: int = 1, page_size: int = 10) -> List[List]:
+    def get_hyper(self, page: int = 1, page_size: int = 10) -> Dict:
         """get_hyper function
         """
         prev = None
