@@ -4,10 +4,9 @@ from flask import Flask, render_template
 from flask_babel import Babel
 
 app = Flask(__name__)
-app.url_map.strict_slashes = False
 
 
-class Config(object):
+class Config():
     """configure class"""
     LANGUAGES = ["en", "fr"],
     BABEL_DEFAULT_LOCALE = "en",
@@ -18,8 +17,8 @@ app.config.from_object(Config)
 babel = Babel(app)
 
 
-@app.route("/")
-def route():
+@app.route('/')
+def index():
     """route func"""
     return render_template('1-index.html')
 
