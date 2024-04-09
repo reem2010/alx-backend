@@ -7,7 +7,7 @@ app = Flask(__name__)
 app.url_map.strict_slashes = False
 
 
-class Config():
+class Config(object):
     """configure class"""
     LANGUAGES = ["en", "fr"],
     BABEL_DEFAULT_LOCALE = "en",
