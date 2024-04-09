@@ -9,6 +9,7 @@ app.url_map.strict_slashes = False
 
 @app.route("/")
 def route():
+    """route func"""
     return render_template('0-index.html')
 
 
