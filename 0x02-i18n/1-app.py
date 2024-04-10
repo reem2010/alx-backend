@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 """starts a Flask web application"""
 from flask import Flask, render_template
 from flask_babel import Babel
