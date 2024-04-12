@@ -56,7 +56,7 @@ def index():
     name = None
     if (g.user):
         name = g.user["name"]
-    return render_template('5-index.html', name=name)
+    return render_template('6-index.html', name=name)
 
 
 if __name__ == '__main__':
