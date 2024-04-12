@@ -45,7 +45,7 @@ def get_locale():
 def before_request():
     """before request func"""
     id = request.args.get('login_as')
-    g.user = get_user(id)
+    g.user = get_user(int(id))
 
 
 @app.route('/')
