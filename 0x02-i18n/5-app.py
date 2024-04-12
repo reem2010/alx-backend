@@ -15,8 +15,8 @@ users = {
 
 def get_user(user_id) -> Dict:
     """get user function"""
-    if (user_id in users):
-        return users[user_id]
+    if (user_id and int(user_id) in users):
+        return users[int(user_id)]
     return None
 
 
@@ -45,7 +45,7 @@ def get_locale():
 def before_request():
     """before request func"""
     id = request.args.get('login_as')
-    g.user = get_user(int(id))
+    g.user = get_user(id)
 
 
 @app.route('/')
