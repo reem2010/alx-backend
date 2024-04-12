@@ -13,7 +13,7 @@ users = {
 }
 
 
-def get_user(user_id: int) -> Dict:
+def get_user(user_id) -> Dict:
     """get user function"""
     if (user_id in users):
         return users[user_id]
